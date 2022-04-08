@@ -1,30 +1,25 @@
-import './App.css';
-import CardSection from './components/CardSection';
-import Header from './components/Header';
-import { OuterLayout } from './styles/Layout';
-import styled from 'styled-components';
-import ChartSection from './components/ChartSection';
-import MessagingSection from './components/MessagingSection';
+import React from 'react'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Developers from './components/Developers';
+import Subscribe from './components/Subscribe';
+import Footer from './components/Footer';
 
 
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-        <OuterLayout>
-          <MainStyled>
-            <CardSection />
-            <ChartSection />
-            <MessagingSection />
-          </MainStyled>
-        </OuterLayout>
+    <div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Developers />
+        <Subscribe />
+        <Footer />
     </div>
   );
 }
 
-const MainStyled = styled.main`
-
-`;
 
 export default App;
